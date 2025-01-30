@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import axios from "axios";
 import './App.css';
+import dotenv from "dotenv";
 import SpeechToText from './components/SpeechToText';
+
+dotenv.congif();
 
 
 function App() {
@@ -12,7 +15,7 @@ function App() {
     if(!question.trim()) return; 
     setAnswer("Loading..");
     try {
-      const response = await axios.post("https://microland-backend.onrender.com/", {
+      const response = await axios.post(process.env.API_URL, {
         question
       });
       setAnswer(response.data.answer);
