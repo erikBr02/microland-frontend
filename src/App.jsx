@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import axios from "axios";
 import './App.css';
-import dotenv from "dotenv";
 import SpeechToText from './components/SpeechToText';
 
 dotenv.congif();
