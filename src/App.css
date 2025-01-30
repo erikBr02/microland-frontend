@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Container Styling */
+#root {
+  max-width: 800px;
+  width: 90%;
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Header */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Input Box */
+.textarea-container {
+  background: #2c2c2c;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.textarea-container textarea {
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+}
+
+/* Button */
+button {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: linear-gradient(135deg, #ff4e75, #ff3e62);
+  transform: translateY(-2px);
+}
+
+/* Response Box */
+.response-container {
+  margin-top: 1.5rem;
+  background: #2c2c2c;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #bbb;
+  text-align: left;
+}
