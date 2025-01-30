@@ -3,7 +3,7 @@ import axios from "axios";
 import './App.css';
 import SpeechToText from './components/SpeechToText';
 
-dotenv.congif();
+
 
 
 function App() {
